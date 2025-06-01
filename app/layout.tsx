@@ -4,7 +4,7 @@ import { Metadata, Viewport } from 'next'
 
 import { fontSans } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
-import { Image } from '@heroui/image'
+// import { Image } from '@heroui/image'
 import { Providers } from './providers'
 
 export const metadata: Metadata = {
