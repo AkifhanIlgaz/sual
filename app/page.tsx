@@ -105,7 +105,7 @@ function generateHeader(title: string): FileChild[] {
 				new TextRun({
 					text: 'Müzakere Grubu: ',
 					size: 24,
-					font: 'Aptos (Gövde)'
+					font: 'Arial (CS Gövde)'
 				})
 			]
 		}),
@@ -116,7 +116,7 @@ function generateHeader(title: string): FileChild[] {
 					text: title,
 					italics: true,
 					size: 24,
-					font: 'Aptos (Gövde)'
+					font: 'Arial (CS Gövde)'
 				})
 			]
 		}),
