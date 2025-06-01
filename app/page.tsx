@@ -327,6 +327,22 @@ export default function Home() {
 				return
 			}
 
+			// Validate that if question count is entered, range must be entered too
+			if (mantikQuestionCount && (!mantikRangeMin || !mantikRangeMax)) {
+				setError('Mantık soru sayısı girildiğinde soru aralığı da girilmelidir!')
+				return
+			}
+
+			if (usulQuestionCount && (!usulRangeMin || !usulRangeMax)) {
+				setError('Usul soru sayısı girildiğinde soru aralığı da girilmelidir!')
+				return
+			}
+
+			if (kelamQuestionCount && (!kelamRangeMin || !kelamRangeMax)) {
+				setError('Kelam soru sayısı girildiğinde soru aralığı da girilmelidir!')
+				return
+			}
+
 			// Validate ranges
 			if (mantikRangeMin && mantikRangeMax) {
 				if (mantikRangeMin > mantikRangeMax) {
