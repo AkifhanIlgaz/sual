@@ -443,7 +443,7 @@ export default function Home() {
 			const a = document.createElement('a')
 
 			a.href = url
-			a.download = 'sample_document.docx'
+			a.download = `${title}.docx`
 
 			// Append to body, click, and remove
 			document.body.appendChild(a)
