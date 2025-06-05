@@ -4,6 +4,7 @@ import { Button } from '@heroui/button'
 import { Input } from '@heroui/input'
 import { NumberInput } from '@heroui/number-input'
 import { AlignmentType, BorderStyle, Document, FileChild, Packer, Paragraph, Table, TableCell, TableRow, TextRun, UnderlineType, WidthType } from 'docx'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 const horizontalLine = new Paragraph({
 	border: {
@@ -280,6 +281,7 @@ function getRandomQuestions(questions: Question[], count: number, min: number, m
 }
 
 export default function Home() {
+	const router = useRouter()
 	const [mantikQuestionCount, setMantikQuestionCount] = useState<number>()
 	const [mantikRangeMin, setMantikRangeMin] = useState<number>()
 	const [mantikRangeMax, setMantikRangeMax] = useState<number>()
@@ -522,8 +524,11 @@ export default function Home() {
 
 			<div className="flex flex-col w-1/4 items-center gap-4 mt-4">
 				<Button color="primary" size="lg" onClick={createDocument}>
-					Oluştur
-				</Button>{' '}
+					İmtihan Kağıdı Oluştur
+				</Button>
+				<Button color="secondary" size="lg" onClick={() => router.push('/rastgele')}>
+					Rastgele Soru Seç
+				</Button>
 				{error && <div className="text-red-500 text-sm ">{error}</div>}
 			</div>
 		</section>
