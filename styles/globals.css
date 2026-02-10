@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @plugin '../hero.ts';
-/* Note: You may need to change the path to fit your project structure */
+/* Scan all project files for Tailwind classes */
+@source '../app/**/*.{js,ts,jsx,tsx}';
+@source '../components/**/*.{js,ts,jsx,tsx}';
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
@@ -10,9 +12,7 @@
 }
 
 body {
-	background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
 	min-height: 100vh;
-	background-attachment: fixed;
 }
 
 /* Add a subtle noise texture overlay */

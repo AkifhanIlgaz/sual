@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+	experimental: {
+		optimizePackageImports: ['@heroui/react', '@heroui/theme']
+	}
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
