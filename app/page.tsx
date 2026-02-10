@@ -466,7 +466,18 @@ export default function Home() {
 		<section className="flex flex-col items-center justify-center gap-8 sm:gap-12 md:gap-20 py-4 sm:py-6 md:py-10 text-black">
 			<div className="flex flex-col items-center gap-4 w-full max-w-md px-4">
 				<div className="w-full">
-					<Input type="text" value={title} onChange={e => setTitle(e.target.value)} placeholder="Başlık giriniz" variant="underlined" className="transition-colors" />
+					<Input
+						type="text"
+						value={title}
+						onChange={e => setTitle(e.target.value)}
+						placeholder="Başlık giriniz"
+						variant="underlined"
+						className="transition-colors"
+						classNames={{
+							input: 'text-black placeholder:text-black/50',
+							inputWrapper: 'border-black'
+						}}
+					/>
 				</div>
 			</div>
 			<div className="flex flex-col md:flex-row justify-around w-full gap-8 md:gap-12 lg:gap-40 text-4xl sm:text-5xl md:text-6xl px-4">
@@ -476,13 +487,48 @@ export default function Home() {
 						<div className="flex items-center justify-between gap-1">
 							<span className="text-sm text-black-400 justify-self-start">Soru Adedi</span>
 							<div></div>
-							<NumberInput hideStepper required variant="underlined" value={mantikQuestionCount} onValueChange={value => setMantikQuestionCount(value as number)} className="transition-colors" />
+							<NumberInput
+								hideStepper
+								required
+								variant="underlined"
+								value={mantikQuestionCount}
+								onValueChange={value => setMantikQuestionCount(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 						</div>
 						<div className="flex items-center justify-center gap-4">
 							<span className="text-sm text-black-400">Soru Aralığı</span>
-							<NumberInput hideStepper required size="sm" variant="underlined" value={mantikRangeMin} onValueChange={value => setMantikRangeMin(value as number)} className="transition-colors" />
+							<NumberInput
+								hideStepper
+								required
+								size="sm"
+								variant="underlined"
+								value={mantikRangeMin}
+								onValueChange={value => setMantikRangeMin(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 							<span className="font-extralight">-</span>
-							<NumberInput variant="underlined" hideStepper required size="sm" value={mantikRangeMax} onValueChange={value => setMantikRangeMax(value as number)} className="transition-colors" />
+							<NumberInput
+								variant="underlined"
+								hideStepper
+								required
+								size="sm"
+								value={mantikRangeMax}
+								onValueChange={value => setMantikRangeMax(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 						</div>
 					</div>
 				</div>
@@ -493,13 +539,48 @@ export default function Home() {
 						<div className="flex items-center justify-between gap-1">
 							<span className="text-sm text-black-400 justify-self-start">Soru Adedi</span>
 							<div></div>
-							<NumberInput hideStepper required variant="underlined" value={usulQuestionCount} onValueChange={value => setUsulQuestionCount(value as number)} className="transition-colors" />
+							<NumberInput
+								hideStepper
+								required
+								variant="underlined"
+								value={usulQuestionCount}
+								onValueChange={value => setUsulQuestionCount(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 						</div>
 						<div className="flex items-center justify-center gap-4">
 							<span className="text-sm text-black-400">Soru Aralığı</span>
-							<NumberInput hideStepper required size="sm" variant="underlined" value={usulRangeMin} onValueChange={value => setUsulRangeMin(value as number)} className="transition-colors" />
+							<NumberInput
+								hideStepper
+								required
+								size="sm"
+								variant="underlined"
+								value={usulRangeMin}
+								onValueChange={value => setUsulRangeMin(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 							<span className="font-extralight">-</span>
-							<NumberInput variant="underlined" hideStepper required size="sm" value={usulRangeMax} onValueChange={value => setUsulRangeMax(value as number)} className="transition-colors" />
+							<NumberInput
+								variant="underlined"
+								hideStepper
+								required
+								size="sm"
+								value={usulRangeMax}
+								onValueChange={value => setUsulRangeMax(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 						</div>
 					</div>
 				</div>
@@ -510,13 +591,48 @@ export default function Home() {
 						<div className="flex items-center justify-between gap-1">
 							<span className="text-sm text-black-400 justify-self-start">Soru Adedi</span>
 							<div></div>
-							<NumberInput hideStepper required variant="underlined" value={kelamQuestionCount} onValueChange={value => setKelamQuestionCount(value as number)} className=" transition-colors" />
+							<NumberInput
+								hideStepper
+								required
+								variant="underlined"
+								value={kelamQuestionCount}
+								onValueChange={value => setKelamQuestionCount(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 						</div>
 						<div className="flex items-center justify-center gap-4">
 							<span className="text-sm text-black-400">Soru Aralığı</span>
-							<NumberInput hideStepper required size="sm" variant="underlined" value={kelamRangeMin} onValueChange={value => setKelamRangeMin(value as number)} className="transition-colors" />
+							<NumberInput
+								hideStepper
+								required
+								size="sm"
+								variant="underlined"
+								value={kelamRangeMin}
+								onValueChange={value => setKelamRangeMin(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 							<span className="font-extralight">-</span>
-							<NumberInput variant="underlined" hideStepper required size="sm" value={kelamRangeMax} onValueChange={value => setKelamRangeMax(value as number)} className="transition-colors" />
+							<NumberInput
+								variant="underlined"
+								hideStepper
+								required
+								size="sm"
+								value={kelamRangeMax}
+								onValueChange={value => setKelamRangeMax(value as number)}
+								className="transition-colors"
+								classNames={{
+									input: 'text-black',
+									inputWrapper: 'border-black'
+								}}
+							/>
 						</div>
 					</div>
 				</div>
