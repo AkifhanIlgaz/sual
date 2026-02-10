@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '../hero.ts';
+/* Note: You may need to change the path to fit your project structure */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
 
 :root {
 	--background-start: #f8fafc;
@@ -29,15 +31,15 @@ body::before {
 
 /* Make underlines white */
 a {
-	text-decoration-color: white;
+	text-decoration-color: black;
 }
 
 /* For elements with underline decoration */
 [class*='underline'] {
-	text-decoration-color: white;
+	text-decoration-color: black;
 }
 
 /* For elements with border-bottom */
 [class*='border-b'] {
-	border-bottom-color: white;
+	border-bottom-color: black;
 }

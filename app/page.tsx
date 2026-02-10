@@ -463,7 +463,7 @@ export default function Home() {
 	}
 
 	return (
-		<section className="flex flex-col items-center justify-center gap-8 sm:gap-12 md:gap-20 py-4 sm:py-6 md:py-10 text-white">
+		<section className="flex flex-col items-center justify-center gap-8 sm:gap-12 md:gap-20 py-4 sm:py-6 md:py-10 text-black">
 			<div className="flex flex-col items-center gap-4 w-full max-w-md px-4">
 				<div className="w-full">
 					<Input type="text" value={title} onChange={e => setTitle(e.target.value)} placeholder="Başlık giriniz" variant="underlined" className="transition-colors" />
@@ -471,15 +471,15 @@ export default function Home() {
 			</div>
 			<div className="flex flex-col md:flex-row justify-around w-full gap-8 md:gap-12 lg:gap-40 text-4xl sm:text-5xl md:text-6xl px-4">
 				<div className="flex flex-col items-center justify-center gap-4">
-					<span className="border-b-2 border-white pb-2">علم منطق </span>
+					<span className="border-b-2 border-black pb-2">علم منطق </span>
 					<div className="flex flex-col gap-2 w-full sm:w-48">
 						<div className="flex items-center justify-between gap-1">
-							<span className="text-sm text-gray-400 justify-self-start">Soru Adedi</span>
+							<span className="text-sm text-black-400 justify-self-start">Soru Adedi</span>
 							<div></div>
 							<NumberInput hideStepper required variant="underlined" value={mantikQuestionCount} onValueChange={value => setMantikQuestionCount(value as number)} className="transition-colors" />
 						</div>
 						<div className="flex items-center justify-center gap-4">
-							<span className="text-sm text-gray-400">Soru Aralığı</span>
+							<span className="text-sm text-black-400">Soru Aralığı</span>
 							<NumberInput hideStepper required size="sm" variant="underlined" value={mantikRangeMin} onValueChange={value => setMantikRangeMin(value as number)} className="transition-colors" />
 							<span className="font-extralight">-</span>
 							<NumberInput variant="underlined" hideStepper required size="sm" value={mantikRangeMax} onValueChange={value => setMantikRangeMax(value as number)} className="transition-colors" />
@@ -488,15 +488,15 @@ export default function Home() {
 				</div>
 
 				<div className="flex flex-col items-center justify-center gap-4">
-					<span className="border-b-2 border-white pb-2">اصول فقه </span>
+					<span className="border-b-2 border-black pb-2">اصول فقه </span>
 					<div className="flex flex-col gap-2 w-full sm:w-48">
 						<div className="flex items-center justify-between gap-1">
-							<span className="text-sm text-gray-400 justify-self-start">Soru Adedi</span>
+							<span className="text-sm text-black-400 justify-self-start">Soru Adedi</span>
 							<div></div>
 							<NumberInput hideStepper required variant="underlined" value={usulQuestionCount} onValueChange={value => setUsulQuestionCount(value as number)} className="transition-colors" />
 						</div>
 						<div className="flex items-center justify-center gap-4">
-							<span className="text-sm text-gray-400">Soru Aralığı</span>
+							<span className="text-sm text-black-400">Soru Aralığı</span>
 							<NumberInput hideStepper required size="sm" variant="underlined" value={usulRangeMin} onValueChange={value => setUsulRangeMin(value as number)} className="transition-colors" />
 							<span className="font-extralight">-</span>
 							<NumberInput variant="underlined" hideStepper required size="sm" value={usulRangeMax} onValueChange={value => setUsulRangeMax(value as number)} className="transition-colors" />
@@ -505,15 +505,15 @@ export default function Home() {
 				</div>
 
 				<div className="flex flex-col items-center justify-center gap-4">
-					<span className="border-b-2 border-white pb-2">علم كلام </span>
+					<span className="border-b-2 border-black pb-2">علم كلام </span>
 					<div className="flex flex-col gap-2 w-full sm:w-48">
 						<div className="flex items-center justify-between gap-1">
-							<span className="text-sm text-gray-400 justify-self-start">Soru Adedi</span>
+							<span className="text-sm text-black-400 justify-self-start">Soru Adedi</span>
 							<div></div>
 							<NumberInput hideStepper required variant="underlined" value={kelamQuestionCount} onValueChange={value => setKelamQuestionCount(value as number)} className=" transition-colors" />
 						</div>
 						<div className="flex items-center justify-center gap-4">
-							<span className="text-sm text-gray-400">Soru Aralığı</span>
+							<span className="text-sm text-black-400">Soru Aralığı</span>
 							<NumberInput hideStepper required size="sm" variant="underlined" value={kelamRangeMin} onValueChange={value => setKelamRangeMin(value as number)} className="transition-colors" />
 							<span className="font-extralight">-</span>
 							<NumberInput variant="underlined" hideStepper required size="sm" value={kelamRangeMax} onValueChange={value => setKelamRangeMax(value as number)} className="transition-colors" />
