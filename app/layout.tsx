@@ -30,8 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html suppressHydrationWarning lang="en">
 			<head />
-			<body className={clsx('min-h-screen text-foreground bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-sky-900 via-zinc-800 to-pink-800 font-sans antialiased', fontSans.variable)}>
-				<Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
+			<body className={clsx('min-h-screen text-foreground  font-sans antialiased', fontSans.variable)}>
+				<Providers themeProps={{ attribute: 'class', defaultTheme: 'light' }}>
 					<Analytics />
 					<div className="relative flex flex-col items-center justify-center min-h-screen">
 						{/* <Image src={`logo.png`} alt={'logo'} width={`250`} height={`250`} className="brightness-0 invert" /> */}
